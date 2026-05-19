@@ -1,0 +1,29 @@
+body {
+  font-family: Arial; 
+  margin: 0;
+  background: #f4f4f4;
+}
+.container {
+  width: 800px;
+  margin: 20px auto;
+  background: red;
+  padding: 20px;
+}
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+input, select, button {
+  padding: 8px;
+}
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid  #ddd;
+  padding: 8px;
+  text-align: center;
+} 

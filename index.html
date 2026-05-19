@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Finance Tracker</h1>
+
+    <!-- Форма добавления -->
+    <form id="form">
+      <input id="title" type="text" placeholder="Название">
+      <input id="amount" type="number" placeholder="Сумма">
+
+      <select id="type">
+        <option value="income">Доход</option>
+        <option value="expense">Расход</option>
+      </select>
+
+      <input id="category" type="text" placeholder="Категория">
+      <button type="submit">Добавить</button>
+    </form>
+
+    <!-- Поиск и фильтр -->
+    <div>
+      <input id="search" type="text" placeholder="Поиск">
+      <select id="filter">
+        <option value="all">Все</option>
+        <option value="income">Доход</option>
+        <option value="expense">Расход</option>
+      </select>
+    </div>
+
+    <!-- Баланс -->
+    <h2>Баланс: <span id="balance">0</span></h2>
+
+    <!-- Список -->
+    <table>
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Сумма</th>
+          <th>Тип</th>
+          <th>Категория</th>
+          <th>Удалить</th>
+        </tr>
+      </thead>
+      <tbody id="list"></tbody>
+    </table>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
